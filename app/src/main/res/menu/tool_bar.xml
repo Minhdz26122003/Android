@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Tìm kiếm"
+        android:id="@+id/timkiem"
+        android:icon="@drawable/baseline_search_24"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"/>
+    <item android:title="Thêm"
+        android:id="@+id/tool_them"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_playlist_add_24"
+        />
+    <item android:title="Cập nhật"
+        android:id="@+id/tool_capnhat"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_restart_alt_24"
+        />
+</menu>

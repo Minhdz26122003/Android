@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_of_ui"
+
+    tools:context=".DangkyActivity">
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Đăng Ký"
+        android:textStyle="italic"
+        android:textFontWeight="@integer/material_motion_duration_medium_1"
+        android:textColor="@android:color/white"
+        android:textSize="44dp"
+        android:fontFamily="@font/font1"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Tài khoản: "
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:textSize="27dp"
+            android:fontFamily="@font/font1"
+            />
+        <EditText
+            android:id="@+id/tk"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:fontFamily="@font/font1"
+            android:hint="tài khoản" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:text=" Mật khẩu: "
+            android:textSize="27dp"
+            android:fontFamily="@font/font1"
+            />
+
+        <EditText
+            android:id="@+id/mk"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:hint="mật khẩu"
+            android:textSize="20dp"
+            android:fontFamily="@font/font1"
+            android:password="true" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button"
+        android:padding="4dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textFontWeight="@integer/material_motion_duration_medium_1"
+            android:text=" Nhập lại  : "
+            android:textSize="27dp"
+            android:fontFamily="@font/font1"
+            />
+
+        <EditText
+            android:id="@+id/lmk"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textSize="20dp"
+            android:fontFamily="@font/font1"
+            android:hint=" nhập lại mật khẩu"
+            android:password="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dangky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:duplicateParentState="false"
+        android:text="Đăng ký"
+        android:backgroundTint="#4D5FC1"/>
+    <Button
+        android:id="@+id/dangnhaptk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:duplicateParentState="false"
+        android:text="Đã có tài khoản ?"
+        android:backgroundTint="#4D5FC1"/>
+
+</TableLayout>

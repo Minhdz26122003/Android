@@ -1,0 +1,6 @@
+<!-- res/menu/popup_menu_layout.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_deletelv"
+        android:title="Delete"/>
+</menu>

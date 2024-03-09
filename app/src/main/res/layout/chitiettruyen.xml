@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NNMT.Chap1">
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/baseline_navigate_before_24"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/tenchap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="Chap1"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-45dp"
+
+        android:layout_toRightOf="@id/tenchap"
+        android:background="@drawable/baseline_navigate_next_24" />
+
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdf"
+        android:layout_width="1000dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tenchap" />
+</RelativeLayout>

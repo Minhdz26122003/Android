@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bottom.HomeFragment"
+    android:id="@+id/frame_home"
+    >
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <ViewFlipper
+                android:id="@+id/viewfliper1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textTruyenHot"
+                android:layout_gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:autoStart="true"
+                android:flipInterval="2500"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/manga_manhua_manhwa1"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slide_mangas_2"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slide_manga_3"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slide_manga_4"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/slide_manga_5"/>
+            </ViewFlipper>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/textTheloai"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_conner"
+                    android:gravity="center_horizontal"
+                    android:padding="8dp"
+                    android:paddingStart="10dp"
+                    android:text="Thể Loại"
+                    android:textColor="@color/black"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textTheloai"
+
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            >
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="Hành động"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:textSize="10dp"
+                                android:layout_margin="5dp"
+                                />
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="Manga"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                android:textSize="10dp"
+                                app:cornerRadius="20dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="Chuyển sinh"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:textSize="10dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="Xuyên không"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:textSize="10dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="Manhwa"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:textSize="10dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="harem"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="mecha"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:layout_margin="5dp"/>
+                            <Button
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="#EA9292"
+                                android:text="romance"
+                                android:textSize="10dp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold|italic"
+                                app:cornerRadius="20dp"
+                                android:layout_margin="5dp"/>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textTruyenMoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rounded_conner"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:padding="6dp"
+                    android:paddingStart="10dp"
+                    android:text="Truyện Nổi Bật"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <HorizontalScrollView
+                    android:id="@+id/Horizon1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTruyenMoi"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageViewmoi1"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/dau_la_dai_luc"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageViewmoi1"
+                                android:layout_marginTop="2dp"
+                                android:text="Đấu la đại lục"
+                                android:textSize="13dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rltghtnoi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+                            <ImageView
+                                android:id="@+id/imageViewmoi2"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/tinh_giap_hon_tuong"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                />
+
+                            <TextView
+                                android:id="@+id/textimageViewmoi2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageViewmoi2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:text="Tinh giáp hồn tướng"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlnnmtnoi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageViewmoi3"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+
+                                android:src="@drawable/nga_lao_ma_than"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                               />
+                            <TextView
+                                android:id="@+id/textimageViewmoi3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nano ma thần"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewmoi3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/rlslnoi"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageViewmoi4"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/toi_thang_cap_mot_minh_ss2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:id="@+id/textimageViewmoi4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Solo Leveling"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewmoi4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageViewmoi5"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+
+                                android:src="@drawable/thang_cap_vo_han_trong_murim"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Thăng cấp vô hạn trong murim"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewmoi5"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/textTruyenHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_conner"
+                    android:gravity="center"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="Truyện Hot"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    android:textColor="@color/black"/>
+
+                <ViewFlipper
+                    android:id="@+id/viewfliper2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTruyenHot"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:autoStart="true"
+                    android:flipInterval="2500"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageViewhot1"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/tuyet_the_vo_than_2793" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tuyệt thế võ thần"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/imageViewhot1"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="#302C2C"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageViewhot2"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/anh_sang_cuoi_con_duong" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ánh sáng cuối con đường"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/imageViewhot2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="#302C2C"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageViewhot3"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/chu_thuat_hoi_chien" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chú thuật hồi chiến"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/imageViewhot3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="#302C2C"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/imageViewhot4"
+                            android:layout_width="200dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/dai_chien_nguoi_khong_lo" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Attack on titans"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:layout_below="@id/imageViewhot4"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textColor="#302C2C"
+                            />
+                    </RelativeLayout>
+
+                </ViewFlipper>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:id="@+id/textTruyenFull"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_conner"
+                    android:gravity="center"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:text="Truyện Full"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/Horizon2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textTruyenFull"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+
+                        >
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageViewfull1"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/ta_la_ta_de_3254"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageViewfull1"
+                                android:layout_marginTop="2dp"
+                                android:text="Ta là tà đế"
+                                android:textSize="13dp"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+                            <ImageView
+                                android:id="@+id/imageViewfull2"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/truong_hoc_sieu_anh_hung_3626"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageViewfull2"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:text="Boku no Hero Academia"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/imageViewfull3"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/mashle_muscles_and_magic"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mashle: Muscles and Magic"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewfull3"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"
+                                />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageViewfull4"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:src="@drawable/toan_tri_doc_gia"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Toàn trí độc giả"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewfull4"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imageViewfull5"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+
+                                android:src="@drawable/ta_muon_tro_thanh_chua_te_bong_toi_6263"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Kage no Jitsuryokusha ni Naritakute!"
+                                android:textSize="13dp"
+                                android:textStyle="bold"
+                                android:layout_below="@id/imageViewfull5"
+                                android:layout_centerHorizontal="true"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textColor="#302C2C"
+                                />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

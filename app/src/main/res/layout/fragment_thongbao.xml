@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bottom.ThongbaoFragment"
+    android:orientation="vertical"
+
+    android:background="#EDD5D5"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/rounded_conner">
+
+        <ImageView
+            android:id="@+id/hinhanh"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hinhanh"
+            android:fontFamily="@font/font1"
+            android:text="Bảo trì hệ thống"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textvt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textten"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hinhanh"
+            android:fontFamily="@font/font1"
+            android:text="Hệ thống ứng dụng đọc truyên xin phép tạm dừng ngày 1/10/2023 để bảo trì. Thông tin đến độc giả "
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_conner">
+
+        <ImageView
+            android:id="@+id/hinhanh2"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/textten2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hinhanh2"
+            android:fontFamily="@font/font1"
+            android:text="Xử lý vi phạm"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textvt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textten2"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/hinhanh2"
+            android:fontFamily="@font/font1"
+            android:text="Những tài khoản có bình luận văng tục, bôi nhọ danh dự cửa cá nhân, tổ chức sẽ bị khóa vĩnh viễn. Thông tin đến độc giả"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/topGroup"
+        android:checkableBehavior="single">
+        <item
+            android:title="Quản lý tài khoản"
+            android:id="@+id/qltk"
+            android:icon="@drawable/baseline_format_list_bulleted_24"
+            />
+        <item
+            android:title="Quản lý truyện"
+            android:id="@+id/qlt"
+            android:icon="@drawable/baseline_bar_chart_24"
+            />
+
+    </group>
+
+    <group android:id="@+id/midGroup"
+        android:checkableBehavior="single">
+        <item
+            android:title="Thể loại "
+            android:id="@+id/type"
+            android:icon="@drawable/baseline_format_list_bulleted_24"
+            />
+        <item
+            android:title="Xếp hạng"
+            android:id="@+id/rank"
+            android:icon="@drawable/baseline_bar_chart_24"
+            />
+    </group>
+
+    <group android:id="@+id/botGroup">
+
+        <item
+            android:title="Thông tin ứng dụng "
+            android:id="@+id/appinfor"
+            android:icon="@drawable/baseline_menu_24"
+            />
+        <item
+            android:title="Chia sẻ"
+            android:id="@+id/share"
+            android:icon="@drawable/baseline_share_24"
+            />
+        <item
+            android:title="Đánh giá"
+            android:id="@+id/rate"
+            android:icon="@drawable/baseline_star_rate_24"
+            />
+    </group>
+    <group
+        android:id="@+id/dxgroup">
+        <item
+            android:title="Đăng nhập"
+            android:id="@+id/dnhap"
+            android:icon="@drawable/baseline_person_24"
+            />
+        <item
+            android:title="Đăng xuất"
+            android:id="@+id/dxuat"
+            android:icon="@drawable/baseline_star_rate_24"
+            />
+    </group>
+
+</menu>

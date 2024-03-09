@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5BE1B5B5"
+    tools:context=".Bottom.ThongtincanhanFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/hinhanh"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/img" />
+
+                <TextView
+                    android:id="@+id/textten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/hinhanh"
+                    android:fontFamily="@font/font1"
+                    android:text="Tên: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tendncn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/textten"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textvt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textten"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/hinhanh"
+                    android:fontFamily="@font/font1"
+                    android:text="Vai trò: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vaitro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tendncn"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@id/textvt"
+                    android:fontFamily="@font/font1"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ln3"
+                        android:layout_marginTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/texthint"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/font1"
+                            android:paddingLeft="20dp"
+                            android:text="Lịch sử"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginBottom="10dp"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img1"
+                                        android:layout_width="160dp"
+                                        android:layout_height="170dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/toan_tri_doc_gia" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/img1"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="5dp"
+                                        android:text="Toàn trí độc giả"
+                                        android:textAlignment="center"
+                                        android:textColor="#302C2C"
+                                        android:textSize="13dp"
+                                        android:lines="1"
+                                        android:ems="9"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img2"
+                                        android:layout_width="160dp"
+                                        android:layout_height="170dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/ta_muon_tro_thanh_chua_te_bong_toi_6263" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/img2"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="2dp"
+                                        android:text="Kage no Jitsuryokusha ni Naritakute!"
+                                        android:textAlignment="center"
+                                        android:textColor="#302C2C"
+                                        android:lines="1"
+                                        android:ems="9"
+                                        android:textSize="12dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img4"
+                                        android:layout_width="160dp"
+                                        android:layout_height="170dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/dai_chien_nguoi_khong_lo" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/img4"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="4dp"
+                                        android:text="Attack on titan"
+                                        android:textAlignment="center"
+                                        android:textColor="#302C2C"
+                                        android:lines="1"
+                                        android:ems="9"
+                                        android:textSize="13dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="15dp"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/img3"
+                                        android:layout_width="160dp"
+                                        android:layout_height="170dp"
+                                        android:layout_gravity="center_horizontal"
+                                        android:src="@drawable/tuyet_the_vo_than_2793" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@id/img3"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center_horizontal"
+                                        android:layout_marginTop="4dp"
+                                        android:text="Tuyệt thế võ thần"
+                                        android:textAlignment="center"
+                                        android:textColor="#302C2C"
+                                        android:lines="1"
+                                        android:ems="9"
+                                        android:textSize="13dp"
+                                        android:textStyle="bold" />
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                        </HorizontalScrollView>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_search_24"
+                            android:text="Search Manga"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="VIP"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nạp Xu"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phiếu đọc truyện cửa tôi"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Thiệp chúc mừng"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sticker của tôi"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:fontFamily="@font/font1"
+                            android:paddingBottom="15dp"
+                            android:text="Danh hiêu fan"
+                            android:textColor="@color/black"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_comment_24"
+                            android:text="Bình luận của tôi"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Level của tôi"
+                            android:drawableLeft="@drawable/baseline_star_rate_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingLeft="15dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/baseline_comment_24"
+                            android:text="Giới thiệu bạn bè"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Phản hồi ý kiến"
+                            android:drawableLeft="@drawable/baseline_notifications_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Giới thiệu chúng tôi"
+                            android:drawableLeft="@drawable/baseline_person_24"
+                            android:paddingBottom="15dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/font1"
+                            android:textSize="20dp" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

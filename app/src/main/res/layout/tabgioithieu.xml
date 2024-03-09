@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <LinearLayout
+                android:id="@+id/ln0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tentruyenct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên truyện"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    />
+                <Button
+                    android:id="@+id/addbm"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/baseline_bookmarks_24"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ln0"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thể loại"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/font1"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E6E4E4"
+                        android:text="Hành động"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        app:cornerRadius="20dp"
+                        android:textSize="9dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E6E4E4"
+                        android:text="Manhwa"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        app:cornerRadius="20dp"
+                        android:textSize="9dp"
+                        android:layout_marginRight="10dp"
+                        />
+                    <Button
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#E6E4E4"
+                        android:text="Supernatural"
+                        android:textColor="@color/black"
+                        android:textStyle="bold|italic"
+                        app:cornerRadius="20dp"
+                        android:textSize="9dp"
+                        android:layout_marginRight="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln1"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nội dung: "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/font1"
+                    />
+                <TextView
+                    android:id="@+id/ndchitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln2"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bình luận nổi bật "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/font1"
+                    />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="50dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="#F3F2F2"
+                            app:cardCornerRadius="20dp"
+                            app:cornerRadius="50dp">
+
+                            <TextView
+                                android:id="@+id/bl1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#D6DAFA"
+                                android:padding="10dp"
+                                android:text="Y.neiz"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+
+                                android:padding="10dp"
+                                android:text="Hoan hô, cuối cùng lại có thêm 1 bộ truyện mới đầy hấp dẫn nữa rồi. Truyện gì mà lạ lạ vậy tôi chưa từng thấy luôn á, mong là nó xứng đáng để cho tôi đọc và trải nghiệm. Tui đọc sơ sơ chap 1 thì thấy nó là truyện hệ thống nhỉ, trong truyện toàn gái xinh không. Tác giả vẽ có tâm vãi. Lời cuố, thì chúc các bạn có một không gan đọc truyện thật là vui vẻ và thoải mái, xin chân thành cảm ơn
+                            " />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="#F3F2F2"
+                            app:cardCornerRadius="20dp"
+                            app:cornerRadius="50dp">
+
+                            <TextView
+                                android:id="@+id/bl2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#D6DAFA"
+                                android:padding="10dp"
+                                android:text="Reali"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:padding="10dp"
+                                android:text=" người mạnh thứ 5 của võ lâm , nếu vậy thì chơi thế nào đc , hay tới lúc ổng luyện võ rồi lén nhìn và học hết , hay lại và kiêu ổng biểu diễn để học , con ruột mà chắc có thể nói chuyện đc 1-2 câu gì đó ha        " />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="#F3F2F2"
+                            app:cardCornerRadius="20dp"
+                            app:cornerRadius="50dp">
+
+                            <TextView
+                                android:id="@+id/bl3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#D6DAFA"
+                                android:padding="10dp"
+                                android:text="Dao Van"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:padding="10dp"
+                                android:text=" người mạnh thứ 5 của võ lâm , nếu vậy thì chơi thế nào đc , hay tới lúc ổng luyện võ rồi lén nhìn và học hết , hay lại và kiêu ổng biểu diễn để học , con ruột mà chắc có thể nói chuyện đc 1-2 câu gì đó ha        " />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:backgroundTint="#F3F2F2"
+                            app:cardCornerRadius="20dp"
+                            app:cornerRadius="50dp">
+
+                            <TextView
+                                android:id="@+id/bl4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="#D6DAFA"
+                                android:padding="10dp"
+                                android:text="Tà Vô Nguyệt"
+                                android:textColor="@color/black"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="30dp"
+                                android:padding="10dp"
+                                android:text="Các bro cho tui xin thêm vài bộ mà main đỉnh như này đi" />
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ln3"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/texthint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Có thể bạn quan tâm"
+                    android:fontFamily="@font/font1"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:src="@drawable/toan_tri_doc_gia"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img1"
+                            android:layout_marginTop="5dp"
+                            android:text="Toàn trí độc giả"
+                            android:textSize="13dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:src="@drawable/ta_muon_tro_thanh_chua_te_bong_toi_6263"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img2"
+                            android:layout_marginTop="2dp"
+                            android:text="Kage no Jitsuryokusha ni Naritakute!"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="170dp"
+                            android:src="@drawable/tuyet_the_vo_than_2793"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img3"
+                            android:layout_marginTop="4dp"
+                            android:text="Mashle muscles and magic"
+                            android:textSize="13dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="3">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/img4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/toan_tri_doc_gia" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img4"
+                            android:layout_marginTop="5dp"
+                            android:text="Toàn trí độc giả"
+                            android:textSize="13dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:src="@drawable/ta_muon_tro_thanh_chua_te_bong_toi_6263"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img5"
+                            android:layout_marginTop="2dp"
+                            android:text="Kage no Jitsuryokusha ni Naritakute!"
+                            android:textSize="12dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginRight="15dp"
+                        >
+                        <ImageView
+                            android:id="@+id/img6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="160dp"
+                            android:src="@drawable/mashle_muscles_and_magic"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/img6"
+                            android:layout_marginTop="4dp"
+                            android:text="Mashle muscles and magic"
+                            android:textSize="13dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="#302C2C"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
